@@ -1,10 +1,10 @@
 #include <iostream> //allows us to read and write into files.
 using namespace std; //a library that wrapped all the standard libraries
 class omass{ //Creation of class
-    float Min_temp, Max_temp;
-    bool water_existance, o2_existance;
+    float Min_temp, Max_temp;           //member variables are declared.
+    bool water_existance, o2_existance;      //member variables are declared.
     public:
-    	void input(){
+    	void input(){   //member function.
 	    cout<<"Enter the Minimum Temperature of the planet Earth:";
 	    cin>>Min_temp;
 	    cout<<"Enter the Maximum Temperature of the planet Earth:";
@@ -15,20 +15,20 @@ class omass{ //Creation of class
 	    cin>>o2_existance;
 	    
 		}
-		void Temp_range(){
+		void Temp_range(){  //member function
 			cout<<"The temperature range of given planet is:"<<Max_temp-Min_temp<<endl;
 		}
-		void life(){
+		void life(){    //member function
 			if (water_existance == 1 and o2_existance == 1)
 			cout<<"Life is possible on your planet."<<endl;
 			else 
 			cout<<"Life is not possible on your planet."<<endl;
 		}
-		void avg_temp(){
+		void avg_temp(){    //member function
 			cout<<"The average temperature of your planet is "<<((Min_temp + Max_temp)/2)<<endl;
 		}
 	
-};
+}; //Body of the class is closed.
 int main()
 {
 	omass f1;
@@ -47,6 +47,7 @@ int main()
     cin>>Min_temp;
     cout<<"Enter the Maximum Temperature of the planet Earth:";
     cin>>Max_temp;
+    
     cout<<"Enter the distance from Sun to Earth:";
     cin>>dist_from_sun;
     cout<<"Does water exist on planet Earth (True / False):";
