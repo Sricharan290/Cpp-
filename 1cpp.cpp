@@ -32,8 +32,7 @@ t1.display();
 //int i;
 //cout << "This is output.\n"; // To be read as "Send the string �This is output.� to the object called cout".
 /*
-The operator cout is an object
-Belongs to output stream class
+The operator cout is an object Belongs to output stream class
 Used to perform write operations on the output devices e.g. screen, disk etc.
 Used with left shift operator (<<), called insertion or put-to operator or output
 operator

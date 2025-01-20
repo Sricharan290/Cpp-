@@ -5,8 +5,10 @@ class leaders         //Creation of class
 	public:		//public is scope
 		string name,birth_place,nationality;     //member variables are declared.
 		int years_lived,no_of_followers;
-	void set()									//member functions
-	{
+	void set();						//function is declared here					
+	void display();				//function is declared here
+};//Body of the class is closed.
+inline void leaders::set()	{		//inline function is defined here
 		cout<<"Enter Name: ";     //The operator cout is an object Belongs to output stream class
 		cin>>name;				// cin is as input object that belongs to the input stream class
 		cout<<"Enter Birth place of "<<name<<":";     //The operator cout is an object Belongs to output stream class
@@ -17,17 +19,14 @@ class leaders         //Creation of class
 		cin>>nationality;				// cin is as input object that belongs to the input stream class
 		cout<<"Enter the no of followers for"<<name<<":";     //The operator cout is an object Belongs to output stream class
 		cin>>no_of_followers;				// cin is as input object that belongs to the input stream class
-	}
-	void display()		//member function
-	{
+	};
+inline void leaders::display()	{		//inline function is defined here
 		cout<<"Name: "<<name<<endl;     //The operator cout is an object Belongs to output stream class
 		cout<<"Birth place; "<<birth_place<<endl;     //The operator cout is an object Belongs to output stream class
 		cout<<"Years lived: "<<years_lived<<endl;     //The operator cout is an object Belongs to output stream class
 		cout<<"Nationality: "<<nationality<<endl;     //The operator cout is an object Belongs to output stream class
 		cout<<"No of followers: "<<no_of_followers<<endl;     //The operator cout is an object Belongs to output stream class
-	}
-	
-};//Body of the class is closed.
+	};
 void popular(leaders a,leaders b){
 	if(a.no_of_followers>b.no_of_followers){
 		cout<<a.name<<" is popular than "<<b.name<<"."<<endl;     //The operator cout is an object Belongs to output stream class

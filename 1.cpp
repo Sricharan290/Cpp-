@@ -11,7 +11,7 @@ int main()
 		a=a+b;
 	}
 	std::cout<<a; // :: stands for 'Scope resolution operator'  // its an object that belongs to ostream
-	return 0;
+	return 0;   //cout is defined under the scope of std
 }
 
 #2
